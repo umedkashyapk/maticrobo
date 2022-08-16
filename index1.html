@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="asset/img/robot.png" type="image/x-icon" />
+    <title>MaticRobo - The Most Stable Polygon Chain Yield Farming DApp</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min57ca.css?v1.8">
+    <link href="asset/css/styleme57ca.css?v1.8" rel="stylesheet">
+    <link href="asset/css/iziToast.min57ca.css?v1.8" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWNS7HDKDP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GWNS7HDKDP');
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse blur">
+        <div class="container">
+            <div class="navbar-header" style="width: 100%;">
+                <a class="navbar-brand" style="color: #8C4BFF;font-size: 30px; font-weight: bold;" href="#">MaticRobo</a>
+                <button class="btn btn-connect connect" id='btn-logout' style='display:none'><i
+            class='fa fa-power-off fa-fw'></i></button>
+                <button class="btn btn-connect connect" id='btn-login'>Connect</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-menu">
+        <div class="container">
+            <div class="row">
+                <div class='col-xs-3'>
+                    <a target='_blank' href='#'>Contract</a>
+                </div>
+                <div class='col-xs-3'>
+                    <a target='_blank' href=''>Audit</a>
+                </div>
+                <div class='col-xs-3'>
+                    <a target='_blank' href=''>Telegram</a>
+                </div>
+                <div class='col-xs-3'>
+                    <a target='_blank' href=''>Twitter</a>
+                </div>
+                <div class='col-xs-3'>
+                    <a target='_blank' href=''>BNB Matick</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='mainview'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-xs-12 col-md-4'>
+                    <div class='h1main'>The Most Stable <span style=" color: #8C4BFF; ">Polygon Chain</span> Yield Farming DApp
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    <div class="box blur" style="margin-top: 30px;">
+                        <h1>Web Statistics</h1>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-3">
+                                <div class="stats_acc"><span id='total_deposit_1'>0</span> <span class='cur'>MATIC</span><span class="text">Total Deposits</span></div>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="stats_acc"><span id='total_user_1'>0</span> <span class='cur'>WALLET</span><span class="text">Total Wallets</span></div>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="stats_acc"><span id='contract_balance_1'>0</span> <span class='cur'>MATIC</span><span class="text">Contract Balance</span></div>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="stats_acc"><span id='total_guard_1'>0</span> <span class='cur'>MATIC</span><span class="text">Guard Line Balance</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="box blur" style="margin-top: 30px; min-height: 210px; background: #8C4BFF url(asset/img/gold.png);background-size: 100% 100%;color: #ffff;height: 347px;}">
+                        <h1 style="color:#fff">SECURITY ROBOT</h1>
+                        <div style="margin-top: 5px; "><p class="fas fa-arrow" >1.Smart Contract is verified<br> &nbsp;&nbsp; By the Haze Crypto.</p><br>
+                            
+                            <p class="fas fa-arrow">2.Security Robot takes<br> &nbsp;&nbsp;care for bugs,back <br> &nbsp;&nbsp;door,vulnerabilities and <br> &nbsp;&nbsp;compatibilities</p>
+                            
+                            <p><img src=
+                        "asset/img/gold2.png" style="margin-right: -94px; width: 220px; height: 205px; float: right; margin-top:-140px; "></p></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="box blur" style="margin-top: 30px; min-height: 210px; background: #8C4BFF url(asset/img/gold.png);background-size: 100% 100%;color: #ffff;">
+                        <h1 style="color:#fff">TRADING ROBOT </h1>
+                        <div style="margin-top: 5px;"><p class="fas fa-arrow" >1.Your Trading robot<br>  &nbsp;&nbsp;start working on your<br>&nbsp;&nbsp;trade  as soon as you<br> &nbsp;&nbsp;make some investment</p><br>
+                            <p class="fas fa-arrow" >2.Trading robot Assure<br>     &nbsp;&nbsp;you to get 15%  Profit in <br>    &nbsp;&nbsp;24 Hour </p><br>
+                            <p class="fas fa-arrow" >3.Robot Will work upto<br>    &nbsp;&nbsp;20 days and till 300% <br> &nbsp;&nbsp;profit</p><br> 
+                            <p class="fas fa-arrow" > 4.Reinvest to Make your<br>  &nbsp;&nbsp;Robot To work for you</p> 
+                            
+                            <p><img src=
+                        "asset/img/gold2.png" style="margin-right: -94px; width: 220px; height: 205px; float: right; margin-top:-256px; "></p></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="box blur" style="margin-top: 30px; min-height: 210px; background: #8C4BFF url(asset/img/gold.png);background-size: 100% 100%;color: #ffff;">
+                        <h1 style="color:#fff">ANTI WHALE ROBOT</h1>
+                        <div style="margin-top: 5px;"><p class="fas fa-arrow" > 1. Anti Whale robot takes <br> &nbsp;&nbsp;care of contract  <br> &nbsp;&nbsp;sustainability Upto <br> &nbsp;&nbsp;a Long Period</p>
+                            <p class="fas fa-arrow" > 2. Robot Restrict anyone to<br>&nbsp;&nbsp;Withdraw more then 10,000 <br> &nbsp;&nbsp;Matic max. a  day</p>
+                            <p class="fas fa-arrow" > 3. Robot Automatically <br> &nbsp;&nbsp;Increase reinvestment <br> &nbsp;&nbsp;to 30%   when balance <br> &nbsp;&nbsp;goes Less than 25% of <br> &nbsp;&nbsp;maximum balance of <br> &nbsp;&nbsp;last 7 Days</p>
+                            
+                            <p><img src=
+                        "asset/img/gold2.png" style="margin-right: -94px; width: 220px; height: 205px; float: right; margin-top:-256px; "></p> </div>
+                    </div>
+                </div><br>
+                <div class="col-xs-12 col-md-6">
+                    <div class="box blur" style="margin-top: 30px;min-height: 490px;">
+                        <h1>Available Balance</h1>
+                        <div class="stats_acc" style=" font-size: 30px; "><span id='acc_available_1'>0.0000</span> <span class='cur'>MATIC</span><span class="text">Your Earnings</span></div>
+                        <!-- <div style="border-radius: 2px;color: #ffffffe0;margin: 10px 0px;font-weight: 100;"><i class='fa fa-info-circle fa-fw'></i> <span id='ri_timer_a_1' style="color: #ffff;">Reinvest available
+            </span><span id='ri_timer_b_1'></span></div> -->
+                        <div style="border-radius: 2px;color: #ffffffe0;margin: 10px 0px;font-weight: 100;"><i class='fa fa-info-circle fa-fw'></i> <span id='wd_timer_a_1' style="color: #ffff;">Withdrawal
+              available </span><span id='wd_timer_b_1'></span></div>
+                        <!-- <button class="btn btn-connect btn-reinvest" style="margin: 5px 0px;border-top: none;border-left: none;border-bottom: none;font-size: 20px;padding: 6px 20px;" id='btn-modal-reinvest'>Reinvest</button> -->
+                        <button class="btn btn-connect btn-withdraw" style="margin: 5px 0px;border-top: none;border-left: none;border-bottom: none;font-size: 20px;padding: 6px 20px;" id='buttonWithdraw_1'>Withdraw</button>
+                        <div style="margin-top: 10px;">- Minimum 1 MATIC, Anti Whale Maximum Withdraw 10,000 MATIC</div>
+                        <div style="margin-top: 5px;">- Automated Perpetual System will hold 10% of withdrawal back to Smart Contract</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="box blur" style="margin-top: 30px;">
+                        <h1>Deposit</h1>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                Daily Return<br>
+                                <span style="font-weight: 800;color: #ffff;font-size: 20px;">15%</span>
+                            </div>
+                            <div class="col-xs-6" style="text-align: right;">
+                                Total ROI<br>
+                                <span style="font-weight: 800;color: #ffff;font-size: 20px;">300%</span>
+                            </div>
+                            <div class="col-xs-12" style="text-align: center;">
+                                <div style=" margin: 30px;background: #fff; display: inline-block; font-size: 35px; font-weight: 100; padding: 10px 22px; border-radius: 60px; color: #5c5c5c; text-align: center; ">
+                                    20<span style=" display: block; font-size: 18px; margin-top: -6px; font-weight: 800; ">DAYS</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <input class='form-control form-deposit' type='text' id='amountDeposit_a_1' placeholder="Enter MATIC Amount">
+                            </div>
+                            <div class="col-xs-6" style="text-align: right;">
+                                ROI in 20 Days<br>
+                                <span style="font-weight: 800;color: #ffff;font-size: 20px;"><span id='calc_a'>0</span>
+                                <small>MATIC</small></span>
+                            </div>
+                            <div class="col-xs-12">
+                                <div style="margin-top: 10px;">- Minimum Deposit 1 MATIC</div>
+                                <div>- No Maximum Limit</div>
+                                <button class="btn btn-connect btn-deposit" id='buttonDeposit_a_1' style="margin-top: 30px;">Deposit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="box blur" style="margin-top: 30px;">
+                        <h1>Your Statistics</h1>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-20">
+                                <div class="stats_acc"><span id='acc_active_deposit_1'>0.00000</span> <span class='cur'>MATIC</span><span class="text">Active Deposit</span></div>
+                            </div>
+                            <div class="col-xs-12 col-md-20">
+                                <div class="stats_acc"><span id='acc_active_reinvest_1'>0.00000</span> <span class='cur'>MATIC</span><span class="text">Active ReInvest</span></div>
+                            </div>
+                            <div class="col-xs-12 col-md-20">
+                                <div class="stats_acc"><span id='acc_total_deposit_1'>0.00000</span> <span class='cur'>MATIC</span><span class="text">Total Deposit</span></div>
+                            </div>
+                            <div class="col-xs-12 col-md-20">
+                                <div class="stats_acc"><span id='referral_bonus_1'>0.00000</span> <span class='cur'>MATIC</span><span class="text">Total Referral Bonus</span></div>
+                            </div>
+                            <div class="col-xs-12 col-md-20">
+                                <div class="stats_acc"><span id='acc_total_withdraw_1'>0.00000</span> <span class='cur'>MATIC</span><span class="text">Total Withdraw</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="box blur" style="margin-top: 30px;">
+                        <h1>Your Deposits</h1>
+                        <div id='acc_total_deposit_count_1' style="display: none;"></div>
+                        <table class="table" style="margin-top: 10px;">
+                            <tr>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                            <tbody id='history_1'>
+                                <tr>
+                                    <td colspan='3' style='text-align:center;'>Please Connect a Wallet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="box blur" style="margin-top: 30px; margin-bottom: 30px;">
+                        <h1>Referral Program</h1>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-2" style=" font-size: 20px; font-weight: 900; color: #fff; ">
+                                5 Level <span style="font-weight: 400;">Referral Program</span>
+                                <div style="margin-bottom: 20px;"></div>
+                            </div>
+                            <div class="col-xs-6 col-md-2" style="color: #ffff;">
+                                Level 1
+                                <span style=" display: block; font-size: 28px; color: #ffff; font-weight: 800; ">10%</span>
+                                <div class="stats_acc"><span id='total_referrals_a_1'>0</span> <span class='cur'></span><span class="text">User Invited</span></div>
+                                <div style="margin-bottom: 20px;"></div>
+                            </div>
+                            <div class="col-xs-6 col-md-2" style="color: #ffff;">
+                                Level 2
+                                <span style=" display: block; font-size: 28px; color: #ffff; font-weight: 800; ">3%</span>
+                                <div class="stats_acc"><span id='total_referrals_b_1'>0</span> <span class='cur'></span><span class="text">User Invited</span></div>
+                                <div style="margin-bottom: 20px;"></div>
+                            </div>
+                            <div class="col-xs-6 col-md-2" style="color: #ffff;">
+                                Level 3
+                                <span style=" display: block; font-size: 28px; color: #ffff; font-weight: 800; ">2%</span>
+                                <div class="stats_acc"><span id='total_referrals_c_1'>0</span> <span class='cur'></span><span class="text">User Invited</span></div>
+                                <div style="margin-bottom: 20px;"></div>
+                            </div>
+                            <div class="col-xs-6 col-md-2" style="color: #ffff;">
+                                Level 4
+                                <span style=" display: block; font-size: 28px; color: #ffff; font-weight: 800; ">1%</span>
+                                <div class="stats_acc"><span id='total_referrals_d_1'>0</span> <span class='cur'></span><span class="text">User Invited</span></div>
+                                <div style="margin-bottom: 20px;"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-2" style="color: #ffff;">
+                                Level 5
+                                <span style=" display: block; font-size: 28px; color: #ffff; font-weight: 800; ">1%</span>
+                                <div class="stats_acc"><span id='total_referrals_e_1'>0</span> <span class='cur'></span><span class="text">User Invited</span></div>
+                                <div style="margin-bottom: 20px;"></div>
+                            </div>
+                            <div class="col-xs-12">
+                                Referral Link <br><input class='form-control form-ref' type='text' placeholder="Please Connect a Wallet" value='' id='reflink'>
+                                <button class="btn btn-connect" id='buttonRefLink' style="padding-left: 10px;">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='footer' style=" background: #3A3E45; padding: 60px 0px; ">
+        <div class='container'>
+            <div class='row'>
+                <div class='col-xs-12 col-md-9'>
+                    <div class='row'>
+                        <div class='col-xs-12 col-md-3'>
+                            <a class="box cbox blur" style=" text-align:center;display: block; padding: 10px 0px; margin-bottom: 15px; " target='_blank' href='#'><img src='asset/img/medium.png' style="height: 50px;-webkit-filter: invert(1);filter: invert(1);"></a>
+                        </div>
+                        <div class='col-xs-12 col-md-3'>
+                            <a class="box cbox blur" style=" text-align:center;display: block; padding: 10px 0px; margin-bottom: 15px; " target='_blank' href='#'><img src='asset/img/dappradar.png' style="height: 50px;-webkit-filter: invert(1);filter: invert(1);"></a>
+                        </div>
+                        <div class='col-xs-12 col-md-3'>
+                            <a class="box cbox blur" style=" text-align:center;display: block; padding: 10px 0px; margin-bottom: 15px; " target='_blank' href='#'><img src='asset/img/dapp.png' style="height: 50px;-webkit-filter: invert(1);filter: invert(1);"></a>
+                        </div>
+                        <div class='col-xs-12 col-md-3'>
+                            <a class="box cbox blur" style=" text-align:center;display: block; padding: 10px 0px; margin-bottom: 15px; " target='_blank' href='#'><img src='asset/img/haze.png' style="height: 50px;-webkit-filter: invert(1);filter: invert(1);"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-xs-12 col-md-3'>
+                    <div style="color: #ffff;font-weight: 100;font-size: 16px;text-align: center;margin-top: 15px;">Powered by Polygon, &copy;2022 <span style="color: #ffff;">MaticRobo</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="timeModal" style="background:rgb(31, 28, 28);background-size: cover;filter: alpha(Opacity=80);-moz-opacity: 0.8;opacity: 0.8;" tabindex="-1" role="dialog" aria-labelledby="myTimeModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background: #000;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" style="text-align: center;" id="myModalLabel">Launch Countdown</h4>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <div class='row'>
+                        <div id="daytime" style="font-size: 38px; color: #fff; font-weight: bold;" class='col-xs-12'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="asset/js/web3.min57ca.js?v1.8"></script>
+    <script type="text/javascript" src="asset/js/web3modal-index57ca.js?v1.8"></script>
+    <script type="text/javascript" src="asset/js/web3-provider.min57ca.js?v1.8"></script>
+    <script type="text/javascript" src="asset/js/jquery.min57ca.js?v1.8"></script>
+    <script type="text/javascript" src="asset/js/iziToast.min57ca.js?v1.8"></script>
+    <script type="text/javascript" src="asset/js/cccbd3d21557ca.js?v1.8" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="asset/js/index57ca.js?v1.8"></script>
+    <script type="text/javascript">
+        $(' #amountDeposit_a_1 ').on("input", function() {
+            prof = 210;
+            val = $(this).val();
+            calc = val * prof / 100;
+            $('#calc_a ').html(calc);
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            function makeTimer() {
+                var endTime = new Date("17 March 2022 12:00:00 GMT+00:00");
+                endTime = (Date.parse(endTime) / 1000);
+
+                var now = new Date();
+                now = (Date.parse(now) / 1000);
+
+                var timeLeft = endTime - now;
+                if (timeLeft <= 0) {
+                    $("#timeModal").modal("hide");
+                    clearInterval(realTimeClData);
+                }
+
+                var days = Math.floor(timeLeft / 86400);
+                var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+                var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+                var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+                if (days < "10") {
+                    days = "0" + days;
+                }
+                if (hours < "10") {
+                    hours = "0" + hours;
+                }
+                if (minutes < "10") {
+                    minutes = "0" + minutes;
+                }
+                if (seconds < "10") {
+                    seconds = "0" + seconds;
+                }
+
+                $("#daytime").html(days + ":" + hours + ":" + minutes + ":" + seconds);
+
+            }
+            var endTime = new Date("17 March 2022 12:00:00 GMT+00:00");
+            endTime = (Date.parse(endTime) / 1000);
+            var realTimeClData;
+            var now = new Date();
+            now = (Date.parse(now) / 1000);
+            if (endTime > now) {
+                $("#timeModal").modal("show");
+                realTimeClData = setInterval(function() {
+                    makeTimer();
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from maticmaster.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 May 2022 11:21:29 GMT -->
+</html>
